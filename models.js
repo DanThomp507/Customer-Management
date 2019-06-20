@@ -36,7 +36,7 @@ const User = sequelize.define( 'user', {
       }
     }
   },
-  phone: Sequelize.INTEGER,
+  phone: Sequelize.STRING,
   address: Sequelize.STRING,
   description: Sequelize.STRING,
 });
