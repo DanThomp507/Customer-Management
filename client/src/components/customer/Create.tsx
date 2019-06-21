@@ -16,3 +16,20 @@ export interface IFormState {
     submitSuccess: boolean;
     loading: boolean;
 }
+class Create extends React.Component<RouteComponentProps, IFormState> {
+    constructor(props: RouteComponentProps) {
+        super(props);
+        this.state = {
+            first_name: '',
+            last_name: '',
+            email: '',
+            phone: '',
+            address: '',
+            description: '',
+            values: [],
+            loading: false,
+            submitSuccess: false,
+        }
+    }
+}
+export default withRouter(Create)
